@@ -22,7 +22,7 @@ function varargout = PROJECT_DEMETER(varargin)
 
 % Edit the above text to modify the response to help PROJECT_DEMETER
 
-% Last Modified by GUIDE v2.5 22-Nov-2023 18:13:00
+% Last Modified by GUIDE v2.5 23-Nov-2023 21:43:21
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -195,6 +195,9 @@ set(handles.screen,'String',strcat(S,'0'));
 
 % --- Executes on button press in pi.
 function pi_Callback(hObject, eventdata, handles)
+if strcmp(get(handles.screen,'String'),'')
+    set(handles.screen,'String','3.1416');
+end
 % hObject    handle to pi (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
@@ -205,13 +208,15 @@ function square_Callback(hObject, eventdata, handles)
 % hObject    handle to square (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+set(handles.screen,'String',num2str(str2num(get(handles.screen,'String'))^2));
 
 
-% --- Executes on button press in pushbutton14.
-function pushbutton14_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton14 (see GCBO)
+% --- Executes on button press in squareroot.
+function squareroot_Callback(hObject, eventdata, handles)
+% hObject    handle to squareroot (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+set(handles.screen,'String',num2str(sqrt(abs(str2num(get(handles.screen,'String'))))));
 
 
 % --- Executes on button press in equal.
@@ -299,22 +304,8 @@ function graph_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
-% --- Executes on button press in mean.
-function mean_Callback(hObject, eventdata, handles)
-% hObject    handle to mean (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-
-
-% --- Executes on button press in median.
-function median_Callback(hObject, eventdata, handles)
-% hObject    handle to median (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-
-
-% --- Executes on button press in mode.
-function mode_Callback(hObject, eventdata, handles)
-% hObject    handle to mode (see GCBO)
+% --- Executes on button press in stats.
+function stats_Callback(hObject, eventdata, handles)
+% hObject    handle to stats (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
