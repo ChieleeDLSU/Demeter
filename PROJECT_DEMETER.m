@@ -316,3 +316,11 @@ function stats_Callback(hObject, eventdata, handles)
 % hObject    handle to stats (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
+% Open the new GUI window
+graphGUI = openfig('stat.fig');
+% Optionally, if you need to access or modify the new GUI's handles/data:
+graphHandles = guidata(graphGUI);
+% Perform any necessary operations with graphHandles
+% For example, to set text in an edit field in the new GUI:
+% set(graphHandles.edit1, 'String', 'Text to set');
