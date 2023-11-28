@@ -304,7 +304,7 @@ function graph_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Open the new GUI window
-graphGUI = openfig('GRAPH_DEMETER.fig'); 
+graphGUI = openfig('SINCOS.fig'); 
 % Optionally, if you need to access or modify the new GUI's handles/data:
 graphHandles = guidata(graphGUI);
 % Perform any necessary operations with graphHandles
