@@ -13,3 +13,6 @@ Features
 
 
 DEMONSTRATION YT LINK: https://www.youtube.com/watch?v=eyRE65CDODs
+
+
+[DEMETER_PROJECT DOCUMENTATION.pdf](https://github.com/ChieleeDLSU/ec2b4DemeterProject/files/13545266/DEMETER_PROJECT.DOCUMENTATION.pdf)
